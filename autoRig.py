@@ -1,6 +1,6 @@
 import time
 from selenium import webdriver
-#def consent():
+
 def main(rigRound:int=0, rigMax:int=0):
     print(f"doing {rigMax} rounds")
     print(f"round: {rigRound}")
