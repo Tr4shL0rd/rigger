@@ -32,8 +32,7 @@ def main(rigRound:int=0, rigMax:int=0):
 
 try:
     rigMax = 2
-    for i in range(2):
-        #consent()
+    for i in range(rigMax):
         main(i,rigMax)
         driver.close()
 except Exception as e:
