@@ -1,8 +1,8 @@
-from tqdm import tqdm
 import time
+import argparse
+from tqdm import tqdm
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
-import argparse
 
 parser = argparse.ArgumentParser(
             prog="autoRig",
@@ -63,7 +63,6 @@ def main(rigRound:int=0, rigMax:int=0):
     driver.find_element_by_xpath("/html/body/div[1]/div[1]/div[2]/div[1]/form/div[8]/div/div[2]/button").click()
 
 try:
-    base_time = 8
     print(f"doing {args.amount} rounds")
     for i in tqdm(range(args.amount)):
         main(i,args.amount)
